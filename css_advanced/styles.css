@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+
+/* Base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+}
+
+/* 1. Fond et background global dès le header */
+header,
+section:first-of-type {
+  background-image: url('images/background.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+/* 2. Header : logo + navigation */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px;
+}
+
+header img {
+  height: 30px;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* 3. Bannière principale */
+section:first-of-type > div:first-child {
+  text-align: center;
+  margin: 160px auto 100px auto;
+}
+
+section:first-of-type h1 {
+  font-size: 120px;
+  font-weight: 900; /* Black */
+  margin: 0;
+}
+
+section:first-of-type p {
+  margin: 20px 0;
+  font-size: 16px;
+  letter-spacing: 4px;
+  // text-transform: uppercase;
+}
+
+/* 4. Bouton violet */
+section:first-of-type button {
+  background-color: #C271FF;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* 5. Bloc "Learn from the pros" */
+section:first-of-type > div:nth-child(2) {
+  text-align: center;
+  margin-top: 100px;
+}
+
+section:first-of-type > div:nth-child(2) h2 {
+  font-size: 32px;
+  margin-bottom: 60px;
+  font-weight: normal;
+  color: white;
+}
+
+section:first-of-type > div:nth-child(2) h2 span {
+  color: #C271FF;
+  font-weight: bold;
+}
+
+/* 6. Container des 4 profils */
+section:first-of-type > div:nth-child(2) > div {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+/* 7. Chaque profil */
+section:first-of-type > div:nth-child(2) > div > div {
+  text-align: center;
+  max-width: 160px;
+}
+
+/* 8. Image de profil */
+section:first-of-type > div:nth-child(2) img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* 9. Nom */
+section:first-of-type > div:nth-child(2) h3 {
+  font-size: 18px;
+  font-weight: 900; /* Black */
+  margin: 10px 0 5px;
+  line-height: 27px;
+}
+
+/* 10. Sous-titre */
+section:first-of-type > div:nth-child(2) p {
+  font-size: 16px;
+  font-style: italic;
+  color: white;
+  line-height: 24px;
+  letter-spacing: 0;
+}
