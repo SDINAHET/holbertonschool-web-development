@@ -1,4 +1,85 @@
-/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+}
+
+/* 🌌 Fond commun header + banner */
+header,
+section:first-of-type {
+  background-image: url('images/background.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+/* 🧭 Header : logo + nav */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px;
+  background-color: transparent;
+}
+
+header img {
+  height: 30px;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* 📢 Première section - hero */
+section:first-of-type {
+  padding-bottom: 100px;
+}
+
+section:first-of-type > div:first-child {
+  text-align: center;
+  margin: 160px auto 100px;
+}
+
+section:first-of-type h1 {
+  font-size: 120px;
+  font-weight: 900;
+  margin: 0;
+}
+
+section:first-of-type p {
+  margin: 20px 0;
+  font-size: 16px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+/* 💜 Bouton */
+section:first-of-type button {
+  background-color: #C271FF;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
 /* main_part */
 
 position: absolute;
@@ -88,7 +169,7 @@ right: -0.28%;
 top: -6.04%;
 bottom: 9.52%;
 
-background: url(background.png);
+background: url(Image.png);
 
 
 /* Bitmap */
